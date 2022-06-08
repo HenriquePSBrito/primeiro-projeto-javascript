@@ -9,16 +9,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(177, 225, 255);
+    background-color: rgb(203, 231, 248);
 }
 
 button {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 2px solid lightcoral;
-    background-color: rgb(241, 214, 214);
-    color: lightcoral;
+    background-color: rgba(255, 255, 255, 0.527);
     font-size: 16pt;
     font-weight: 600;
     text-align: center;
@@ -29,8 +27,26 @@ button {
 }
 
 #currentNumber {
+    border: 2px solid black;
+    background-color: #ffffff;
+    width: 23px;
+    height: 38px;
+    padding: 0 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin: 0 20px;
     font-size: 16pt;
+    font-weight: 600;
 }
+
+.btn_subtrair {
+    color: red;
+    border: 2px solid rgb(250, 0, 0);
+}
+
+.btn_adicionar {
+    color: blue;
+    border: 2px solid blue;
+}
+
