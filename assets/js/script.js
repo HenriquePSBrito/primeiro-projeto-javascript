@@ -11,15 +11,34 @@ function decrement(){
     currentNumberWrapper.innerHTML = currentNumber;
 }
 
-var counter = document.querySelector("#counter");
+/* Mudar cor da numeração */
+// counter.addEventListener("click", function() {
 
-counter.addEventListener("click", function() {
+//     if (currentNumber < 0) {
+//         this.style.color = "red";
+//     }
 
-    if (currentNumber < 0) {
-        this.style.color = "red";
+//     else 
+//         this.style.color = "blue";
+// });
+
+
+var botaoSub = document.querySelector(".btn_subtrair");
+var botaoAdd = document.querySelector(".btn_adicionar");
+
+botaoSub.addEventListener("click", function() {
+        
+    if (currentNumber < 0 ){
+        botaoSub.disabled = true;
+        alert("Valor menor que zero não permitido!")
+        document.getElementById("currentNumber").innerHTML = 0;
     }
+    
+});
 
-    else 
-        this.style.color = "blue";
-
+botaoAdd.addEventListener("click", function() {
+  
+    if (currentNumber > 0){
+        botaoSub.disabled = false;
+    }    
 });
